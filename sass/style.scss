@@ -9,7 +9,7 @@ ul {
 }
 a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
 .container {
     width: 1140px;
@@ -17,6 +17,16 @@ a {
 }
 button {
     cursor: pointer;
+}
+.logo {
+    font-weight: 600;
+    font-size: 40px;
+    display: flex;
+    color: #F3FF02;
+    .fa {
+        color: #F3FF02;
+        margin-right: 20px;
+    }
 }
 .header.active {
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
@@ -27,6 +37,12 @@ button {
     .fa {
         color: #232323;
     }
+    &-logo {
+        color: #F3FF02;
+        .fa {
+            color: #F3FF02;
+        }
+    }
 
 }
 .header {
@@ -34,7 +50,7 @@ button {
     left: 0;
     width: 100%;
     height: 90px;
-    background-color: #fff;
+    background-color: #212121;
     position: fixed;
     transition: all 0.37s cubic-bezier(0, 0, 0.58, 1);
     z-index: 99;
@@ -58,7 +74,7 @@ button {
         justify-content: space-between;
         .fa {
             font-size: 30px;
-            color: #000;
+            color: #fff;
         }
     }
     &-wrapper {
@@ -67,14 +83,15 @@ button {
         align-items: center;
         width: 100%;
     }
-    &-logo {
-        .logo-block {
-            width: 40px;
-            height: 40px;
-            border: solid 1px #000;
-            margin: 0 auto;
-        }
-    }
+    // &-logo {
+    //     color: #fff;
+    //     .logo-block {
+    //         width: 40px;
+    //         height: 40px;
+    //         border: solid 1px #fff;
+    //         margin: 0 auto;
+    //     }
+    // }
     &-links {
         display: flex;
         width: 300px;
@@ -276,7 +293,7 @@ button {
     }
 }
 .footer {
-    background-color: #fff;
+    background-color: #212121;
     width: 100%;
     padding: 50px 0;
     font-weight: 300;
@@ -285,10 +302,11 @@ button {
         .logo-block {
             width: 40px;
             height: 40px;
-            border: solid 1px #000;
+            border: solid 1px #fff;
         }
     }
     a {
+        color: #fff;
         &:hover {
             color: #F3FF02;
         }
@@ -318,12 +336,13 @@ button {
     }
     &-middle {
         width: 34%;
+        color: #fff;
     }
     &-address {
         width: 95%;
         height: 50px;
-        // box-shadow: 0px 0 2px -1px #000;
-        border: 1px solid #000;
+        box-shadow: 0px 0 2px -1px #fff;
+        // border: 1px solid #000;
         margin-top: 30px;
         align-items: center;
         display: flex;
@@ -337,8 +356,8 @@ button {
         width: 95%;
         height: 50px;
         margin-top: 5px;
-        // box-shadow: 2px 2px 1px -2px #000;
-        border: 1px solid #000;
+        box-shadow: 2px 2px 1px -2px #fff;
+        // border: 1px solid #000;
         align-items: center;
         display: flex;
         padding-left: 10px;
@@ -349,7 +368,7 @@ button {
     }
     .subheader {
         font-size: 35px;
-            color: #000;
+            color: #fff;
             font-weight: 300;
             span {
                 color: #F3FF02;
@@ -362,7 +381,7 @@ button {
             width: 95%;
             height: 60px;
             margin-top: 20px;
-            border: solid 1px #000;
+            border: solid 1px #F3FF02;
             
         }
     }
