@@ -34,19 +34,18 @@ button {
     left: 0;
     width: 100%;
     height: 60px;
-    background-color: #6d989b;
+    background-color: #232323;
     position: fixed;
     transition: all 0.37s cubic-bezier(0, 0, 0.58, 1);
     z-index: 99;
-    color: #fff;
     font-weight: 300;
     &-button {
         button {
-            border: 1px solid #6d989b;
+            border: 2px solid #F3FF02;
             width: 150px;
             height: 30px;
-            color: #6d989b;
             border-radius: 5px;
+            font-weight: 300;
             background-color: #fff;
                 &:hover {
                     background-color: #C2C7D5;
@@ -69,10 +68,11 @@ button {
         width: 100%;
     }
     &-logo {
+        color: #fff;
         .logo-block {
             width: 40px;
             height: 40px;
-            border: solid 1px;
+            border: solid 1px #fff;
             margin: 0 auto;
         }
     }
@@ -86,25 +86,83 @@ button {
 .search {
     display: flex;
     width: 99%;
-    margin: 100px 10px 0; 
+    margin-top: 62px; 
     .dropdown {
-        width: 16%;
-        background-color: #6d989b;
-        margin-right: 20px;
+        width: 18%;
+        background-color: #232323;
+        margin-right: 10px;
         height: 450px;
         padding: 10px 15px;
         border-radius: 15px;
         font-weight: 300;
+        font-size: 14px;
+        color: #fff;
+        .first-input, .second-input, .fourth-input {
+            .fa {
+                margin: -22px 17px 0 0;
+                position: relative;
+                float: right;
+                font-weight: 400;
+            }
+        }
+        .third-two-inputs, .fifth-two-inputs {
+            input {
+                width: 45px;
+                height: 30px;
+                border-radius: 5px;
+            }
+        }
+        .sixth-input {
+            input {
+                width: 79%;
+            }
+        }
+        .seventh-input {
+            input {
+                width: 72%;
+            }
+            .fa {
+                margin: -22px 17px 0 0;
+                position: relative;
+                float: right;
+                font-weight: 400;
+            }
+        }
+        .eighth-input {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            input {
+                width: 60%;
+            }
+        }
+        .ninth-input {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            input {
+                width: 65%;
+            }
+        }
+        .tenth-input {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            input {
+                width: 60%;
+            }
+        }
         input {
             width: 98%;
-            height: 40px;
+            height: 30px;
             border-radius: 20px;
             border: 1px solid grey;
-            margin-top: 20px;
+            margin-top: 10px;
             padding: 8px;
             font-weight: 300;
             &::placeholder {
-                color: #6d989b;
+                color: grey;
+                font-size: 11px;
             }
         }
         &-list {
@@ -142,16 +200,23 @@ button {
         &-wrapper {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;        
+            justify-content: space-between;
+            width: 101%;        
         }
         &-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #6d989b;
+            background-color: grey;
             color: #fff; 
             height: 30px; 
-            text-align: center;    
+            text-align: center;
+            position: fixed;
+            width: 81.5%;    
+        }
+        &-strings {
+            width: 100%;
+            margin-top: 20px;
         }
         &-string {
             display: flex;
@@ -200,15 +265,122 @@ button {
     .button {
         width: 12%;
         button {
-            border: 1px solid #6d989b;
-            width: 100%;
+            border: 2px solid #F3FF02;
+            width: 90%;
             height: 30px;
-            color: #6d989b;
+            font-weight: 300;
             border-radius: 5px;
             background-color: #fff;
             &:hover {
                 background-color: #C2C7D5;
             }
         }
+    }
+}
+.footer {
+    background-color: #232323;
+    width: 100%;
+    padding: 50px 0;
+    font-weight: 300;
+    &-logo {
+        color: #fff;
+        margin: 0 auto;
+        .logo-block {
+            width: 40px;
+            height: 40px;
+            border: solid 1px #fff;
+        }
+    }
+    a {
+        &:hover {
+            color: #F3FF02;
+        }
+    }
+    &-wrapper {
+        display: flex;
+    }
+    &-left {
+        width: 33%;
+    }
+    &-contacts {
+        margin-top: 30px;
+        text-transform: uppercase;
+    }
+    &-phone {
+        margin-top: 30px;
+    }
+    &-rates {
+        margin-top: 30px;
+        text-transform: uppercase;
+    }
+    .social {
+        display: flex;
+        margin-top: 30px;
+        width: 43%;
+        justify-content: space-between;
+    }
+    &-middle {
+        width: 34%;
+    }
+    &-address {
+        width: 95%;
+        height: 50px;
+        box-shadow: 0px 0 2px -1px #fff;
+        margin-top: 30px;
+        align-items: center;
+        display: flex;
+        padding-left: 10px;
+        color: #fff;
+        .fa {
+            margin-right: 10px;
+            color: #F3FF02;
+        }
+    }
+    &-mail {
+        width: 95%;
+        height: 50px;
+        box-shadow: 2px 2px 1px -2px #fff;
+        align-items: center;
+        display: flex;
+        padding-left: 10px;
+        color: #fff;
+        .fa {
+            margin: 0 10px 0 0;
+            color: #F3FF02;
+        }
+    }
+    .subheader {
+        font-size: 35px;
+            color: #fff;
+            font-weight: 300;
+            span {
+                color: #F3FF02;
+            }
+    }
+    &-right {
+        width: 33%;
+        input {
+            background-color: transparent;
+            width: 95%;
+            height: 60px;
+            margin-top: 20px;
+            border: solid 1px #F3FF02;
+            
+        }
+    }
+    &-form {
+        .fa {
+            margin: -22px -25px 0 -39px;
+            position: relative;
+            color: #F3FF02;
+            font-size: 24px;
+        }
+    }
+    &-faq {
+        margin-top: 20px;
+        
+    }
+    &-help {
+        margin-top: 20px;
     }
 }
