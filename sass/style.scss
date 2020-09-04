@@ -31,8 +31,13 @@ button {
     }
 
 }
-.header {
+.pre-header {
+    position: fixed;
     top: 0;
+    left: 0;
+}
+.header {
+    top: 50px;
     left: 0;
     width: 100%;
     height: 70px;
@@ -107,7 +112,7 @@ button {
     }
 }
 .subheader {
-    margin-top: 70px;
+    margin-top: 160px;
     background-color: #A7A6A3;
     height: 100px;
     padding-top: 10px;
@@ -165,12 +170,13 @@ button {
         background-color: #fff;
         margin-right: 10px;
         height: 450px;
-        padding: 10px 15px;
         font-weight: 400;
         font-size: 14px;
         &-title {
             font-size: 27px;
             font-weight: 400;
+            text-align: center;
+            margin-top: 20px;
         }
         .first-input {
             height: 35px;
@@ -209,7 +215,7 @@ button {
             margin-top: 5px;
             .single {
                 margin-top: 5px;
-                width: 255px;
+                width: 265px;
             }
         }
        
@@ -220,7 +226,7 @@ button {
             border: 2px solid #A7A6A3;
             &::placeholder {
                 color: #000;
-                font-size: 11px;
+                font-size: 10px;
                 font-weight: 400;
             }
         }
@@ -262,21 +268,25 @@ button {
         &-form {
             width: 570px;
             border: 1px solid #000;
-            height: 30px;
-            padding: 2px 0 0 10px;
+            height: 29px;
+            padding: 1px 0 0 30px;
+            color: #000;
         }
         .input-dropdown {
             border: none;
             outline: none;
-            width: 508px;
+            width: 488px;
+            &::placeholder {
+                color: #000;
+            }
             
         }
         &-submit {
             border: none;
             outline: none;
             width: 44px;
-            height: 13px;
-            margin-top: 4px;
+            height: 10px;
+            margin-top: 7px;
             background: url('../icons/down-arrow.svg') no-repeat 50% 50%;
         }
         &-item {
@@ -316,10 +326,13 @@ button {
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
+            text-align: center;
             padding-left: 20px;
+            border-left: 2px solid #D7D7D2;
         }
         &-button {
-            margin-top: 20px;
+            margin-top: 62px;
+            margin-left: 32px;
             width: 100px;
             height: 30px;
             border: 2px solid #F3B22E;
@@ -334,7 +347,8 @@ button {
     width: 100%;
     height: 360px;
     padding: 50px 0;
-    font-weight: 300;
+    font-weight: 400;
+    font-size: 14px;
     position: relative;
     a {
         color: #fff;
@@ -375,8 +389,13 @@ button {
         &-yellow {
             background-color: #F3B22E;
             height: 40px;
-            text-align: center;
             padding: 10px;
+            .icons {
+                width: 210px;
+                display: flex;
+                justify-content: space-between;
+                margin: 0 auto;
+            }
         }
         &-white {
             background-color: #fff;
