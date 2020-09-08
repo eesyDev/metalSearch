@@ -362,14 +362,22 @@ button {
         
     }
 }
-.pop-window {
-    width: 800px;
-    height: 500px;
-    display: none;
-    // position: absolute;
-    // left: 50%;
-    // transform: translateX(-50%);
-    border: 1px solid #fff;
+.hide {
+    display: none !important;
+}
+.popup {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: rgba(0, 0, 0, .8);
+    z-index: 100;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    overflow-x: hidden;
     &-header {
         text-transform: uppercase;
         width: 790px;
@@ -379,10 +387,16 @@ button {
         font-weight: 300;
         margin: 0 auto;
         color: #fff;
-        padding-left: 30px;
-        padding-top: 6px;
+        padding: 6px 15px;
+        display: flex;
+        justify-content: space-between;
     }
     &-wrapper {
+        display: block;
+        background-color: #fff;
+        padding: 5px;
+    }
+    &-block {
         display: flex;
         padding: 0 0 0 20px;
         margin-top: 20px;

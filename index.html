@@ -25,7 +25,7 @@
                 </div>
                 <nav>
                     <ul class="header-links">
-                        <li><a href="#">Поиск</a></li>
+                        <li><a href="#" class="popup-link">Поиск</a></li>
                         <li><a href="#">Заказы</a></li>
                         <li><a href="#">Торги</a></li>
                         <li><a href="#">Сделки</a></li>
@@ -515,67 +515,72 @@
             </div>      
         </div>       
     </section>
-    <div class="pop-window">
-        <div class="pop-window-header">предложение поставщика</div>
-        <div class="pop-window-wrapper">
-            <div class="pop-window-left">
-                <div class="pop-window-lil">Наименование</div>
-                <div class="pop-window-big pop-name">Арматура</div>
-                <div class="pop-window-lil">Размер</div>
-                <div class="pop-window-big pop-size">8</div>
-                <div class="pop-window-lil">Марка</div>
-                <div class="pop-window-big pop-mark">A400</div>
-                <div class="pop-window-lil ">Остаток</div>
-                <div class="pop-window-big pop-rem">100 Тонн</div>
-                <div class="pop-window-lil">Примечания</div>
-                <div class="pop-window-big pop-note">ГОСТ 32901-2014</div>
+    <div class="popup hide">
+        <div class="popup-wrapper hide">
+            <div class="popup-header">
+                предложение поставщика
+                <i class="fa fa-close close"></i>
             </div>
-            <div class="pop-window-middle">
-                <div class="pop-window-lil">Город</div>
-                <div class="pop-window-big pop-city">Москва</div>
-                <div class="pop-window-lil">Поставщик</div>
-                <div class="pop-window-big pop-provider">ООО "Северсталь"</div>
-                <div class="pop-window-lil">Телефон</div>
-                <div class="pop-window-big pop-phone">+7 (809) 303-48-34</div>
-                <div class="pop-window-lil">e-mail</div>
-                <div class="pop-window-big pop-email">severstal@mail.ru</div>
-                <div class="pop-window-lil">Рейтинг Поставщика</div>
-                <div class="pop-window-big raiting pop-rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
+            <div class="popup-block">
+                <div class="popup-left">
+                    <div class="popup-lil">Наименование</div>
+                    <div class="popup-big pop-name">Арматура</div>
+                    <div class="popup-lil">Размер</div>
+                    <div class="popup-big pop-size">8</div>
+                    <div class="popup-lil">Марка</div>
+                    <div class="popup-big pop-mark">A400</div>
+                    <div class="popup-lil ">Остаток</div>
+                    <div class="popup-big pop-rem">100 Тонн</div>
+                    <div class="popup-lil">Примечания</div>
+                    <div class="popup-big pop-note">ГОСТ 32901-2014</div>
                 </div>
-            </div>
-            <div class="pop-window-right">
-                <div class="pop-window-lil">размещено:</div>
-                <div class="pop-window-big pop-date">10.08.2020</div>
-                <div class="pop-window-lil">обновлено:</div>
-                <div class="pop-window-big pop-date-2">01.09.2020</div>
-                <div class="pop-window-lil">Цена</div>
-                <div class="pop-window-big pop-price">116000</div>
-                
-            </div>
-        </div>
-        <div class="pop-window-down">
-            <div class="pop-window-down-left">        
-                <div class="pop-window-left-up">
-                    <form action="">
-                        <input type="text" placeholder="Напишите вопрос или отправьте предложение поставщику">
-                    </form>
-                </div>
-                <div class="pop-window-left-down">
-                    <div class="clips">
-                        <input type="submit" value="" class="clip">
-                        <input type="text" placeholder="прикрепить файл" class="pre-clip">
-                        
+                <div class="popup-middle">
+                    <div class="popup-lil">Город</div>
+                    <div class="popup-big pop-city">Москва</div>
+                    <div class="popup-lil">Поставщик</div>
+                    <div class="popup-big pop-provider">ООО "Северсталь"</div>
+                    <div class="popup-lil">Телефон</div>
+                    <div class="popup-big pop-phone">+7 (809) 303-48-34</div>
+                    <div class="popup-lil">e-mail</div>
+                    <div class="popup-big pop-email">severstal@mail.ru</div>
+                    <div class="popup-lil">Рейтинг Поставщика</div>
+                    <div class="popup-big raiting pop-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
                     </div>
-                    <input type="submit" class="send">
+                </div>
+                <div class="popup-right">
+                    <div class="popup-lil">размещено:</div>
+                    <div class="popup-big pop-date">10.08.2020</div>
+                    <div class="popup-lil">обновлено:</div>
+                    <div class="popup-big pop-date-2">01.09.2020</div>
+                    <div class="popup-lil">Цена</div>
+                    <div class="popup-big pop-price">116000</div>
+                    
                 </div>
             </div>
-            <div class="pop-window-down-right">
-                <button class="pop-window-button">КУПИТЬ</button>
+            <div class="popup-down">
+                <div class="popup-down-left">        
+                    <div class="popup-left-up">
+                        <form action="">
+                            <input type="text" placeholder="Напишите вопрос или отправьте предложение поставщику">
+                        </form>
+                    </div>
+                    <div class="popup-left-down">
+                        <div class="clips">
+                            <input type="submit" value="" class="clip">
+                            <input type="text" placeholder="прикрепить файл" class="pre-clip">
+                            
+                        </div>
+                        <input type="submit" class="send">
+                    </div>
+                </div>
+                <div class="popup-down-right">
+                    <button class="popup-button">КУПИТЬ</button>
+                </div>
             </div>
         </div>
     </div>
